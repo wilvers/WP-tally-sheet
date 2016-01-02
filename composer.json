@@ -1,0 +1,13 @@
+{
+    "name": "pwilvers/wp-tally-sheet",
+    "description": "Wordpress  plugin. tally sheet to save daily work",
+    "keywords": ["application", "wordpress", "tally sheet"],
+    "homepage": "https://github.com/wilvers/WP-tally-sheet",
+    "authors": [
+        {
+            "name": "pwilvers",
+            "email": "patrice@wilvers.net"
+        }
+    ],
+    "require": {}
+}
