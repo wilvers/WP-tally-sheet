@@ -1,0 +1,23 @@
+{
+    "name": "pwilvers",
+    "items": [
+        {
+            "id": "PWS20151201",
+            "worker": "PWS",
+            "imputation": "terrassement",
+            "date": "2015-12-01",
+            "start": "08:30",
+            "end": "17:00",
+            "total": ""
+        },
+        {
+            "id": "VHD20151201",
+            "worker": "VHD",
+            "imputation": "terrassement",
+            "date": "2015-12-01",
+            "start": "",
+            "end": "",
+            "total": ""
+        }
+    ]
+}
