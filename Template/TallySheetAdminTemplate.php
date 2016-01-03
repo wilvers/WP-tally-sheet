@@ -77,8 +77,12 @@
         margin-top: 30px;
     }
     .tally-sheet-admin label{
-        display:inline-block;
+        max-display:inline-block; 
         width: 80px;
+    }
+    .tally-sheet-admin-data{
+        height: 500px;
+        overflow: auto;
     }
     div.tally-sheet-admin-data table,tr,td{
         border: solid white 1px;

@@ -8,4 +8,4 @@ Wordpress  plugin. tally sheet to save daily work
 - order by date data
 - display data in front
 - sum by filter
--
+

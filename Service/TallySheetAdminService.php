@@ -36,6 +36,8 @@ class TallySheetAdminService extends BaseTallySheet {
 
     public function saveJson() {
         $data = $_POST;
+
+        file_put_contents(__DIR__ . "/../data/data_" . date("YmdHis") . ".json", json_encode($data));
         file_put_contents(__DIR__ . "/../data/data.json", json_encode($data));
 
         header('Content-Type: application/json');
