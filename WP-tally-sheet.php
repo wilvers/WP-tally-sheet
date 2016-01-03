@@ -34,6 +34,15 @@ function pw_load_scripts($hook) {
 }
 
 add_action('admin_enqueue_scripts', 'pw_load_scripts');
+// Same handler function...
+add_action('wp_ajax_nopriv_save_tallysheet', 'my_action_callback');
+add_action('wp_ajax_save_tallysheet', 'my_action_callback');
+
+function my_action_callback() {
+    $p = new tally_sheet_admin();
+
+    echo $p->saveJson();
+}
 
 class tally_sheet extends WP_widget {
 
@@ -74,9 +83,13 @@ class tally_sheet_admin {
 
     public function getPage() {
         $service = new TallySheet\Service\TallySheetAdminService();
-
         return $service->render(array(
         ));
+    }
+
+    public function saveJson() {
+        $service = new TallySheet\Service\TallySheetAdminService();
+        return $service->saveJson();
     }
 
 }
